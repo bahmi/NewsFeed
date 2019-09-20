@@ -14,7 +14,12 @@
             object-fit: cover;
         }
     </style>
-    <title>News Portal</title>
+
+    {% if page_title %}
+        <title>News Portal - {{ page_title }}</title>
+    {% else %}
+        <title>News Portal</title>
+    {% endif %}
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
