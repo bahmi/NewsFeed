@@ -8,18 +8,7 @@
         <hr>
         <div class="row">
             {% for source in technology_src.sources %}
-                <div class="col-md-3">
-                    <div class="card" style="width: 16rem;">
-                        <div class="card-header">
-                            {{ source.name }}
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">{{ source.description|truncatechars:95 }}</p>
-                            <a href="sources/{{ source.id }}" class="btn btn-outline-success btn-sm">Visit {{ source.name }}</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
+                {% include "includes/base_sources.html" %}
             {% endfor %}
         </div>
 
@@ -30,18 +19,7 @@
         <hr>
         <div class="row">
             {% for source in sports_src.sources %}
-                <div class="col-md-3">
-                    <div class="card" style="width: 16rem;">
-                        <div class="card-header">
-                            {{ source.name }}
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">{{ source.description|truncatechars:95 }}</p>
-                            <a href="#" class="btn btn-outline-success btn-sm">Visit {{ source.name }}</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
+                {% include "includes/base_sources.html" %}
             {% endfor %}
         </div>
 
@@ -52,18 +30,7 @@
         <hr>
         <div class="row">
             {% for source in business_src.sources %}
-                <div class="col-md-3">
-                    <div class="card" style="width: 16rem;">
-                        <div class="card-header">
-                            {{ source.name }}
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">{{ source.description|truncatechars:95 }}</p>
-                            <a href="#" class="btn btn-outline-success btn-sm">Visit {{ source.name }}</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
+                {% include "includes/base_sources.html" %}
             {% endfor %}
         </div>
 
@@ -74,18 +41,7 @@
         <hr>
         <div class="row">
             {% for source in entertainment_src.sources %}
-                <div class="col-md-3">
-                    <div class="card" style="width: 16rem;">
-                        <div class="card-header">
-                            {{ source.name }}
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">{{ source.description|truncatechars:95 }}</p>
-                            <a href="#" class="btn btn-outline-success btn-sm">Visit {{ source.name }}</a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
+                {% include "includes/base_sources.html" %}
             {% endfor %}
         </div>
     </div>

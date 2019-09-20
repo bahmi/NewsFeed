@@ -1,0 +1,12 @@
+<div class="col-md-3">
+    <div class="card" style="width: 16rem;">
+        <div class="card-header">
+            {{ source.name }}
+        </div>
+        <div class="card-body">
+            <p class="card-text">{{ source.description|truncatechars:95 }}</p>
+            <a href="sources/{{ source.id }}" class="btn btn-outline-success btn-sm">Visit {{ source.name }}</a>
+        </div>
+    </div>
+    <br>
+</div>
