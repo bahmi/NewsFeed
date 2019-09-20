@@ -6,4 +6,5 @@ from newsapi import NewsApiClient
 def home(request):
     api_request = NewsApiClient(api_key=config('api_key'))
     business_sources = api_request.get_sources(category='business', language='en')
-    return render(request, 'home.html', {'api_request':api_request, 'business_sources': business_sources})
+    return render(request, 'home.html', {'api_request':api_request,
+                                         'business_sources': business_sources})
