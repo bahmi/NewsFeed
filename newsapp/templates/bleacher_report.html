@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="page-header mt-3">
+            <h3>Top Headlines - {{ page_title }}</h3>
+        </div>
+        <hr>
+        <div class="row">
+            {% for article in bleacher_report.articles %}
+                {% include "includes/base_articles.html" %}
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

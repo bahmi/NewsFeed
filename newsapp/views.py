@@ -9,13 +9,13 @@ def home(request):
     sports_src = api_request.get_sources(category='sports', language='en')
     business_src = api_request.get_sources(category='business', language='en')
     entertainment_src = api_request.get_sources(category='entertainment', language='en')
-
     return render(request, 'home.html', {'technology_src': technology_src,
                                          'sports_src': sports_src,
                                          'business_src': business_src,
                                          'entertainment_src': entertainment_src,
                                          })
 
+# technology news sources
 def ars_technica(request):
     page_title = 'Ars Technica'
     ars_technica = api_request.get_top_headlines(sources='ars-technica', language='en')
@@ -73,7 +73,85 @@ def wired(request):
     page_title = 'Wired'
     wired = api_request.get_top_headlines(sources='wired', language='en')
     return render(request, 'wired.html', {'wired': wired,
+                                          'page_title': page_title})
+
+def bbc_sport(request):
+    page_title = 'BBC Sport'
+    bbc_sport = api_request.get_top_headlines(sources='bbc-sport', language='en')
+    return render(request, 'bbc_sport.html', {'bbc_sport': bbc_sport,
+                                              'page_title': page_title})
+
+def bleacher_report(request):
+    page_title = 'Bleacher Report'
+    bleacher_report = api_request.get_top_headlines(sources='bleacher-report', language='en')
+    return render(request, 'bleacher_report.html', {'bleacher_report': bleacher_report,
+                                                    'page_title': page_title})
+
+def espn(request):
+    page_title = 'ESPN'
+    espn = api_request.get_top_headlines(sources='espn', language='en')
+    return render(request, 'espn.html', {'espn': espn,
+                                         'page_title': page_title})
+
+def espn_cric_info(request):
+    page_title = 'ESPN Cric Info'
+    espn_cric_info = api_request.get_top_headlines(sources='espn-cric-info', language='en')
+    return render(request, 'espn_cric_info.html', {'espn_cric_info': espn_cric_info,
+                                                   'page_title': page_title})
+
+def football_italia(request):
+    page_title = 'Football Italia'
+    football_italia = api_request.get_top_headlines(sources='football-italia', language='en')
+    return render(request, 'football_italia.html', {'football_italia': football_italia,
+                                                    'page_title': page_title})
+
+def four_four_two(request):
+    page_title = 'FourFourTwo'
+    four_four_two = api_request.get_top_headlines(sources='four-four-two', language='en')
+    return render(request, 'four_four_two.html', {'four_four_two': four_four_two,
+                                                  'page_title': page_title})
+
+def fox_sports(request):
+    page_title = 'Fox Sports'
+    fox_sports = api_request.get_top_headlines(sources='fox-sports', language='en')
+    return render(request, 'fox_sports.html', {'fox_sports': fox_sports,
                                                'page_title': page_title})
+
+def nfl_news(request):
+    page_title = 'NFL News'
+    nfl_news = api_request.get_top_headlines(sources='nfl-news', language='en')
+    return render(request, 'nfl_news.html', {'nfl_news': nfl_news,
+                                          'page_title': page_title})
+
+def nhl_news(request):
+    page_title = 'NHL News'
+    nhl_news = api_request.get_top_headlines(sources='nhl-news', language='en')
+    return render(request, 'nhl_news.html', {'nhl_news': nhl_news,
+                                          'page_title': page_title})
+
+def talksport(request):
+    page_title = 'TalkSport'
+    talksport = api_request.get_top_headlines(sources='talksport', language='en')
+    return render(request, 'talksport.html', {'talksport': talksport,
+                                          'page_title': page_title})
+
+def the_sport_bible(request):
+    page_title = 'The Sport Bible'
+    the_sport_bible = api_request.get_top_headlines(sources='the-sport-bible', language='en')
+    return render(request, 'the_sport_bible.html', {'the_sport_bible': the_sport_bible,
+                                          'page_title': page_title})
+
+# def wired(request):
+#     page_title = 'Wired'
+#     wired = api_request.get_top_headlines(sources='wired', language='en')
+#     return render(request, 'wired.html', {'wired': wired,
+#                                           'page_title': page_title})
+#
+# def wired(request):
+#     page_title = 'Wired'
+#     wired = api_request.get_top_headlines(sources='wired', language='en')
+#     return render(request, 'wired.html', {'wired': wired,
+#                                           'page_title': page_title})
 
 
 
