@@ -121,37 +121,74 @@ def nfl_news(request):
     page_title = 'NFL News'
     nfl_news = api_request.get_top_headlines(sources='nfl-news', language='en')
     return render(request, 'nfl_news.html', {'nfl_news': nfl_news,
-                                          'page_title': page_title})
+                                             'page_title': page_title})
 
 def nhl_news(request):
     page_title = 'NHL News'
     nhl_news = api_request.get_top_headlines(sources='nhl-news', language='en')
     return render(request, 'nhl_news.html', {'nhl_news': nhl_news,
-                                          'page_title': page_title})
+                                             'page_title': page_title})
 
 def talksport(request):
     page_title = 'TalkSport'
     talksport = api_request.get_top_headlines(sources='talksport', language='en')
     return render(request, 'talksport.html', {'talksport': talksport,
-                                          'page_title': page_title})
+                                              'page_title': page_title})
 
 def the_sport_bible(request):
     page_title = 'The Sport Bible'
     the_sport_bible = api_request.get_top_headlines(sources='the-sport-bible', language='en')
     return render(request, 'the_sport_bible.html', {'the_sport_bible': the_sport_bible,
-                                          'page_title': page_title})
+                                                    'page_title': page_title})
 
-# def wired(request):
-#     page_title = 'Wired'
-#     wired = api_request.get_top_headlines(sources='wired', language='en')
-#     return render(request, 'wired.html', {'wired': wired,
-#                                           'page_title': page_title})
-#
-# def wired(request):
-#     page_title = 'Wired'
-#     wired = api_request.get_top_headlines(sources='wired', language='en')
-#     return render(request, 'wired.html', {'wired': wired,
-#                                           'page_title': page_title})
+def australian_financial_review(request):
+    page_title = 'Australian Financial Review'
+    australian_financial_review = api_request.get_top_headlines(sources='australian-financial-review', language='en')
+    return render(request, 'australian_financial_review.html', {'australian_financial_review': australian_financial_review,
+                                                                'page_title': page_title})
+
+def bloomberg(request):
+    page_title = 'Bloomberg'
+    bloomberg = api_request.get_top_headlines(sources='bloomberg', language='en')
+    return render(request, 'bloomberg.html', {'bloomberg': bloomberg,
+                                              'page_title': page_title})
+
+def business_insider(request):
+    page_title = 'Business Insider'
+    business_insider = api_request.get_top_headlines(sources='business-insider', language='en')
+    return render(request, 'business_insider.html', {'business_insider': business_insider,
+                                                     'page_title': page_title})
+
+def business_insider_uk(request):
+    page_title = 'Business Insider (UK)'
+    business_insider_uk = api_request.get_top_headlines(sources='business-insider-uk', language='en')
+    return render(request, 'business_insider_uk.html', {'business_insider_uk': business_insider_uk,
+                                                        'page_title': page_title})
+
+def cnbc(request):
+    page_title = 'CNBC'
+    cnbc = api_request.get_top_headlines(sources='cnbc', language='en')
+    return render(request, 'cnbc.html', {'cnbc': cnbc,
+                                         'page_title': page_title})
+
+def financial_post(request):
+    page_title = 'Financial Post'
+    financial_post = api_request.get_top_headlines(sources='financial-post', language='en')
+    return render(request, 'financial_post.html', {'financial_post': financial_post,
+                                                   'page_title': page_title})
+
+def fortune(request):
+    page_title = 'Fortune'
+    fortune = api_request.get_top_headlines(sources='fortune', language='en')
+    return render(request, 'fortune.html', {'fortune': fortune,
+                                            'page_title': page_title})
+
+def the_wall_street_journal(request):
+    page_title = 'The Wall Street Journal'
+    the_wall_street_journal = api_request.get_top_headlines(sources='the-wall-street-journal', language='en')
+    return render(request, 'the_wall_street_journal.html', {'the_wall_street_journal': the_wall_street_journal,
+                                                            'page_title': page_title})
+
 
 
 

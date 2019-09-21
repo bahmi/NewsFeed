@@ -28,5 +28,14 @@ urlpatterns = [
     path('sources/talksport', views.talksport, name='talksport'),
     path('sources/the-sport-bible', views.the_sport_bible, name='the_sport_bible'),
 
+    path('sources/australian-financial-review', views.australian_financial_review, name='australian_financial_review'),
+    path('sources/bloomberg', views.bloomberg, name='bloomberg'),
+    path('sources/business-insider', views.business_insider, name='business_insider'),
+    path('sources/business-insider-uk', views.business_insider_uk, name='business_insider_uk'),
+    path('sources/cnbc', views.cnbc, name='cnbc'),
+    path('sources/financial-post', views.financial_post, name='financial_post'),
+    path('sources/fortune', views.fortune, name='fortune'),
+    path('sources/the-wall-street-journal', views.the_wall_street_journal, name='the_wall_street_journal'),
+
 
 ]
