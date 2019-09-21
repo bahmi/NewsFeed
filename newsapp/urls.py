@@ -37,5 +37,13 @@ urlpatterns = [
     path('sources/fortune', views.fortune, name='fortune'),
     path('sources/the-wall-street-journal', views.the_wall_street_journal, name='the_wall_street_journal'),
 
-
+    path('sources/buzzfeed', views.buzzfeed, name='buzzfeed'),
+    path('sources/daily-mail', views.daily_mail, name='daily_mail'),
+    path('sources/entertainment-weekly', views.entertainment_weekly, name='entertainment_weekly'),
+    path('sources/ign', views.ign, name='ign'),
+    path('sources/mashable', views.mashable, name='mashable'),
+    path('sources/mtv-news', views.mtv_news, name='mtv_news'),
+    path('sources/mtv-news-uk', views.mtv_news_uk, name='mtv_news_uk'),
+    path('sources/polygon', views.polygon, name='polygon'),
+    path('sources/the-lad-bible', views.the_lad_bible, name='the_lad_bible'),
 ]

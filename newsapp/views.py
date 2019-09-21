@@ -75,6 +75,7 @@ def wired(request):
     return render(request, 'wired.html', {'wired': wired,
                                           'page_title': page_title})
 
+# sports news sources
 def bbc_sport(request):
     page_title = 'BBC Sport'
     bbc_sport = api_request.get_top_headlines(sources='bbc-sport', language='en')
@@ -141,6 +142,7 @@ def the_sport_bible(request):
     return render(request, 'the_sport_bible.html', {'the_sport_bible': the_sport_bible,
                                                     'page_title': page_title})
 
+# business news sources
 def australian_financial_review(request):
     page_title = 'Australian Financial Review'
     australian_financial_review = api_request.get_top_headlines(sources='australian-financial-review', language='en')
@@ -189,9 +191,60 @@ def the_wall_street_journal(request):
     return render(request, 'the_wall_street_journal.html', {'the_wall_street_journal': the_wall_street_journal,
                                                             'page_title': page_title})
 
+# entertainment news sources
+def buzzfeed(request):
+    page_title = 'Buzzfeed'
+    buzzfeed = api_request.get_top_headlines(sources='buzzfeed', language='en')
+    return render(request, 'buzzfeed.html', {'buzzfeed': buzzfeed,
+                                             'page_title': page_title})
 
+def daily_mail(request):
+    page_title = 'Daily Mail'
+    daily_mail = api_request.get_top_headlines(sources='daily-mail', language='en')
+    return render(request, 'daily_mail.html', {'daily_mail': daily_mail,
+                                               'page_title': page_title})
 
+def entertainment_weekly(request):
+    page_title = 'Entertainment Weekly'
+    entertainment_weekly = api_request.get_top_headlines(sources='entertainment-weekly', language='en')
+    return render(request, 'entertainment_weekly.html', {'entertainment_weekly': entertainment_weekly,
+                                                         'page_title': page_title})
 
+def ign(request):
+    page_title = 'IGN'
+    ign = api_request.get_top_headlines(sources='ign', language='en')
+    return render(request, 'ign.html', {'ign': ign,
+                                        'page_title': page_title})
+
+def mashable(request):
+    page_title = 'Mashable'
+    mashable = api_request.get_top_headlines(sources='mashable', language='en')
+    return render(request, 'mashable.html', {'mashable': mashable,
+                                             'page_title': page_title})
+
+def mtv_news(request):
+    page_title = 'MTV News'
+    mtv_news = api_request.get_top_headlines(sources='mtv-news', language='en')
+    return render(request, 'mtv_news.html', {'mtv_news': mtv_news,
+                                             'page_title': page_title})
+
+def mtv_news_uk(request):
+    page_title = 'MTV News (UK)'
+    mtv_news_uk = api_request.get_top_headlines(sources='mtv-news-uk', language='en')
+    return render(request, 'mtv_news_uk.html', {'mtv_news_uk': mtv_news_uk,
+                                                'page_title': page_title})
+
+def polygon(request):
+    page_title = 'Polygon'
+    polygon = api_request.get_top_headlines(sources='polygon', language='en')
+    return render(request, 'polygon.html', {'polygon': polygon,
+                                            'page_title': page_title})
+
+def the_lad_bible(request):
+    page_title = 'The Lad Bible'
+    the_lad_bible = api_request.get_top_headlines(sources='the-lad-bible', language='en')
+    return render(request, 'the_lad_bible.html', {'the_lad_bible': the_lad_bible,
+                                                  'page_title': page_title})
 
 
 
