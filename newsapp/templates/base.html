@@ -16,14 +16,14 @@
     </style>
 
     {% if page_title %}
-        <title>News Portal - {{ page_title }}</title>
+        <title>NewsFeed - {{ page_title }}</title>
     {% else %}
-        <title>News Portal</title>
+        <title>NewsFeed</title>
     {% endif %}
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand ml-5 pl-4" href="{% url 'home' %}">News Portal</a>
+      <a class="navbar-brand ml-5 pl-4" href="{% url 'home' %}">NewsFeed</a>
     </nav>
 
         {% block content %}
@@ -34,7 +34,7 @@
       <!-- Copyright -->
        <footer id="sticky-footer" class="py-3 bg-dark text-white-50">
         <div class="container text-center text-white">
-          <small>Copyright &copy; bahmi.net</small>
+          <small>Copyright &copy; NewsFeed</small>
         </div>
       </footer>
       <!-- Copyright -->

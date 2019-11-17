@@ -1,1 +1,1 @@
-web: gunicorn newsportal.wsgi
+web: gunicorn newsfeed.wsgi
