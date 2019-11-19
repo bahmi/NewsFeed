@@ -1,7 +1,7 @@
 # NewsFeed
 A web application which displays currently published headlines and articles from a wide range of news sources using NewsAPI.
 
-## Prerequisities
+## Prerequisite
 You need to have [Python (3.7+)](https://www.python.org/downloads/) installed to run this project
 
 ## Setup
